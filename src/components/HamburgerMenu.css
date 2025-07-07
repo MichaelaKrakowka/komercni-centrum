@@ -1,0 +1,64 @@
+.mobile-menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 28px;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 300;
+  color: black;
+}
+
+.mobile-menu-btn.hidden {
+  display: none;
+}
+
+.DialogOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: black;
+  z-index: 150;
+}
+
+.DialogContent {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 260px;
+  height: 100vh;
+  background: white;
+  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+  font-size: 28px;
+  color: black;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.menu-links a:hover {
+  text-decoration: underline;
+}

@@ -4,10 +4,15 @@
   cursor: pointer;
   font-size: 28px;
   position: fixed;
-  top: 16px;
-  right: 16px;
+  top: 30px;
+  right: 20px;
   z-index: 300;
-  color: black;
+  color: rgb(236, 236, 236);
+}
+
+.mobile-menu-btn svg {
+  width: 20px;
+  height: 20px;
 }
 
 .mobile-menu-btn.hidden {
@@ -17,8 +22,8 @@
 .DialogOverlay {
   position: fixed;
   inset: 0;
-  background-color: black;
-  z-index: 150;
+  background-color: rgba(0, 0, 0, 0.5); /* Černá poloprůhledná vrstva */
+  z-index: 999;
 }
 
 .DialogContent {
@@ -27,7 +32,7 @@
   right: 0;
   width: 260px;
   height: 100vh;
-  background: white;
+  background: rgb(179, 200, 222);
   box-shadow: -3px 0 10px rgba(0, 0, 0, 0.15);
   padding: 20px;
   z-index: 200;
@@ -48,7 +53,7 @@
 
 .menu-links {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 16px;
 }
 

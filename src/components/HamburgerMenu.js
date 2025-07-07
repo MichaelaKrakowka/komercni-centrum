@@ -3,6 +3,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { HamburgerMenuIcon, Cross2Icon } from "@radix-ui/react-icons";
 import { motion, AnimatePresence } from "framer-motion";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
+import "./HamburgerMenu.css";
 
 export const HamburgerMenu = () => {
   const [open, setOpen] = useState(false);
@@ -21,7 +22,6 @@ export const HamburgerMenu = () => {
         <AnimatePresence>
           {open && (
             <>
-              {/* Overlay */}
               <Dialog.Overlay asChild>
                 <motion.div
                   className="DialogOverlay"
@@ -32,7 +32,6 @@ export const HamburgerMenu = () => {
                 />
               </Dialog.Overlay>
 
-              {/* Content */}
               <Dialog.Content className="DialogContent">
                 <Dialog.Title>
                   <VisuallyHidden>Hlavní menu</VisuallyHidden>

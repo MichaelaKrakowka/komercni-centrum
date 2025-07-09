@@ -1,69 +1,57 @@
-.mobile-menu-btn {
-  background: none;
-  border: none;
+.mobile_open_menu {
   cursor: pointer;
-  font-size: 28px;
-  position: fixed;
-  top: 30px;
-  right: 20px;
-  z-index: 300;
-  color: rgb(236, 236, 236);
+  border: none;
+  background: none;
+  padding: 6px;
+  margin-right: 28px;
+}
+.mobile_open_menu:hover {
+  border-radius: 5px;
+  background-color: rgb(18, 50, 82);
 }
 
-.mobile-menu-btn svg {
-  width: 20px;
-  height: 20px;
+.mobile_close_menu {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 6px;
+  color: black;
+}
+.mobile_close_menu:hover {
+  border-radius: 5px;
+}
+svg {
+  width: 25px;
+  height: 25px;
+  color: rgb(246, 244, 240);
 }
 
-.mobile-menu-btn.hidden {
-  display: none;
+.menu_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  box-shadow: 0 10px 20px rgba(17, 44, 66, 0.5);
 }
 
-.DialogOverlay {
-  position: fixed;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Černá poloprůhledná vrstva */
-  z-index: 999;
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
 }
 
-.DialogContent {
-  position: fixed;
+.dialog_root {
+  position: relative;
+}
+
+.menu_content {
+  position: absolute;
   top: 0;
+  left: 0;
   right: 0;
-  width: 260px;
-  height: 100vh;
-  background: rgb(179, 200, 222);
-  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.15);
-  padding: 20px;
-  z-index: 200;
-  display: flex;
-  flex-direction: column;
-}
-
-.close-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  align-self: flex-end;
-  font-size: 28px;
-  color: black;
-  padding: 0;
-  margin-bottom: 16px;
-}
-
-.menu-links {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.menu-links a {
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.menu-links a:hover {
-  text-decoration: underline;
+  animation: slideDown 300ms ease-out;
 }

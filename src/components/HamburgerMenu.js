@@ -1,64 +1,42 @@
-import React, { useState } from "react";
+import React from "react";
 import * as Dialog from "@radix-ui/react-dialog";
-import { HamburgerMenuIcon, Cross2Icon } from "@radix-ui/react-icons";
-import { motion, AnimatePresence } from "framer-motion";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
+import { HamburgerMenuIcon, Cross2Icon } from "@radix-ui/react-icons";
 import "./HamburgerMenu.css";
 
 export const HamburgerMenu = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = React.useState(false);
 
   return (
-    <Dialog.Root open={open} onOpenChange={setOpen}>
+    <Dialog.Root className="dialog_root" open={open} onOpenChange={setOpen}>
       <Dialog.Trigger asChild>
         <button
-          className={`mobile-menu-btn ${open ? "hidden" : ""}`}
-          aria-label={open ? "Zavřít menu" : "Otevřít menu"}>
-          <HamburgerMenuIcon />
+          className="mobile_open_menu"
+          aria-label={
+            open ? "Zavřít menu s navigací" : "Otevřít menu s navigací"
+          }>
+          {open ? <Cross2Icon /> : <HamburgerMenuIcon />}
+          {/* <HamburgerMenuIcon /> */}
         </button>
       </Dialog.Trigger>
-
       <Dialog.Portal>
-        <AnimatePresence>
-          {open && (
-            <>
-              <Dialog.Overlay asChild>
-                <motion.div
-                  className="DialogOverlay"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 0.5 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.3 }}
-                />
-              </Dialog.Overlay>
-
-              <Dialog.Content className="DialogContent">
-                <Dialog.Title>
-                  <VisuallyHidden>Hlavní menu</VisuallyHidden>
-                </Dialog.Title>
-
-                <motion.div
-                  className="menu-inner"
-                  initial={{ x: "100%" }}
-                  animate={{ x: 0 }}
-                  exit={{ x: "100%" }}
-                  transition={{ type: "spring", stiffness: 300, damping: 30 }}>
-                  <Dialog.Close asChild>
-                    <button className="close-btn" aria-label="Zavřít menu">
-                      <Cross2Icon />
-                    </button>
-                  </Dialog.Close>
-                  <nav className="menu-links">
-                    <a href="#Home">Domů</a>
-                    <a href="#WhyUs">Proč my?</a>
-                    <a href="#Form">Volné prostory</a>
-                    <a href="#Contact">Kontakt</a>
-                  </nav>
-                </motion.div>
-              </Dialog.Content>
-            </>
-          )}
-        </AnimatePresence>
+        <Dialog.Overlay className="menu_overlay" />
+        <Dialog.Content className="menu_content">
+          <Dialog.Title>
+            <VisuallyHidden>Hlavní menu</VisuallyHidden>
+          </Dialog.Title>
+          <Dialog.Close asChild>
+            {/* <button className="close_btn">
+              <Cross2Icon className="mobile_close_menu" />
+            </button> */}
+            <nav className="menu_links">
+              <a href="#about">O nás</a>
+              <a href="#services">Služby</a>
+              <a href="#freeOffices">Volné prostory</a>
+              <a href="#contact">Kontakt</a>
+            </nav>
+          </Dialog.Close>
+        </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>
   );

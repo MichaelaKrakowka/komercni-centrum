@@ -22,16 +22,32 @@ svg {
   align-items: center;
   justify-content: center;
   height: 200px;
-  /* background-color: rgb(53, 115, 144); */
-  border-top: rgb(53, 115, 144);
   box-shadow: 0 10px 10px -10px rgba(17, 44, 66, 0.5);
 }
 .menu_link {
+  position: relative;
   font-family: "Nunito Sans", serif;
   font-size: 18px;
   color: rgb(15, 42, 65);
   text-decoration: none;
   padding: 8px;
+}
+
+.menu_link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(15, 42, 65);
+}
+
+.menu_link:hover::after {
+  width: 100%;
+  right: auto;
+  left: 0;
+  transition: width 0.4s ease, right 0.4s ease;
 }
 
 .dialog_root {

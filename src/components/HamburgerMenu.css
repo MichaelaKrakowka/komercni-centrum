@@ -50,7 +50,7 @@ svg {
 
 .menu_content {
   position: absolute;
-  top: 0;
+  top: 120px;
   left: 0;
   right: 0;
   animation: slideDown 300ms ease-out;

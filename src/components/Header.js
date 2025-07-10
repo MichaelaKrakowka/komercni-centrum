@@ -7,7 +7,7 @@ export const Header = () => {
     <header className="header">
       <div className="header_container">
         <a href="/">
-          <img className="logo" src="/LogoKC.png" alt="logo" />
+          <img className="logo" src="/logoKC.png" alt="logo" />
         </a>
         <nav>
           <HamburgerMenu />

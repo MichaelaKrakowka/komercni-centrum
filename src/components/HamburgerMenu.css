@@ -7,19 +7,9 @@
 }
 .mobile_open_menu:hover {
   border-radius: 5px;
-  background-color: rgb(18, 50, 82);
+  border: 1px solid rgba(246, 244, 240, 0.56);
 }
 
-.mobile_close_menu {
-  cursor: pointer;
-  border: none;
-  background: none;
-  padding: 6px;
-  color: black;
-}
-.mobile_close_menu:hover {
-  border-radius: 5px;
-}
 svg {
   width: 25px;
   height: 25px;
@@ -31,17 +21,17 @@ svg {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 150px;
-  box-shadow: 0 10px 20px rgba(17, 44, 66, 0.5);
+  height: 200px;
+  /* background-color: rgb(53, 115, 144); */
+  border-top: rgb(53, 115, 144);
+  box-shadow: 0 10px 10px -10px rgba(17, 44, 66, 0.5);
 }
-
-@keyframes slideDown {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0%);
-  }
+.menu_link {
+  font-family: "Nunito Sans", serif;
+  font-size: 18px;
+  color: rgb(15, 42, 65);
+  text-decoration: none;
+  padding: 8px;
 }
 
 .dialog_root {
@@ -49,9 +39,18 @@ svg {
 }
 
 .menu_content {
-  position: absolute;
+  position: fixed;
   top: 120px;
   left: 0;
   right: 0;
-  animation: slideDown 300ms ease-out;
+  z-index: -1;
+  animation: slideDown 2s ease-out;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }

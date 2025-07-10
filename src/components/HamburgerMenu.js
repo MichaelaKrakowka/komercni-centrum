@@ -30,10 +30,18 @@ export const HamburgerMenu = () => {
               <Cross2Icon className="mobile_close_menu" />
             </button> */}
             <nav className="menu_links">
-              <a href="#about">O nás</a>
-              <a href="#services">Služby</a>
-              <a href="#freeOffices">Volné prostory</a>
-              <a href="#contact">Kontakt</a>
+              <a href="#about" className="menu_link">
+                O nás
+              </a>
+              <a href="#services" className="menu_link">
+                Služby
+              </a>
+              <a href="#freeOffices" className="menu_link">
+                Volné prostory
+              </a>
+              <a href="#contact" className="menu_link">
+                Kontakt
+              </a>
             </nav>
           </Dialog.Close>
         </Dialog.Content>

@@ -8,14 +8,3 @@ export const App = () => {
     </div>
   );
 };
-
-// < Header />
-//   < Navigation />
-//      < Services />
-//      < Logo />
-//   < WhyUs />
-//      < Boxes />
-//   < Offers />
-//   < Form />
-//   < Map />
-//   < Footer />

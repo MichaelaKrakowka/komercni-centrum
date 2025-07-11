@@ -5,7 +5,7 @@ import { HamburgerMenu } from "./HamburgerMenu";
 export const Header = () => {
   return (
     <header className="header">
-      <div className="header_container">
+      <div className="header_container container">
         <a href="/">
           <img className="logo" src="/logoKC.png" alt="logo" />
         </a>

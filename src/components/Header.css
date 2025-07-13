@@ -1,7 +1,9 @@
 .header {
+  z-index: 1000;
+  position: relative;
   height: 120px;
   display: flex;
-  background-color: rgb(212, 219, 227);
+  background-color: rgb(35, 50, 65);
   box-shadow: 0 10px 20px rgba(17, 44, 66, 0.5);
 }
 

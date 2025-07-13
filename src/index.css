@@ -75,6 +75,12 @@ h6 {
   isolation: isolate;
 }
 
+body {
+  font-family: "Open Sans";
+  color: rgb(27, 90, 143);
+  background-color: rgb(243, 241, 241);
+}
+
 .container {
   width: 100vw;
 }

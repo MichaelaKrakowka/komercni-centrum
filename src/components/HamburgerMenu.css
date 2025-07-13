@@ -13,7 +13,7 @@
 svg {
   width: 25px;
   height: 25px;
-  color: rgb(15, 42, 65);
+  color: rgb(236, 236, 230);
 }
 
 .menu_links {
@@ -26,9 +26,9 @@ svg {
 }
 .menu_link {
   position: relative;
-  font-family: "Nunito Sans", serif;
+  font-family: "Menbere";
   font-size: 18px;
-  color: rgb(15, 42, 65);
+  color: rgb(19, 86, 142);
   text-decoration: none;
   padding: 8px;
 }
@@ -39,7 +39,8 @@ svg {
   bottom: 0;
   right: 0;
   width: 0%;
-  background-color: rgb(15, 42, 65);
+  height: 2px;
+  background-color: rgb(19, 86, 142);
 }
 
 .menu_link:hover::after {
@@ -53,13 +54,20 @@ svg {
   position: relative;
 }
 
+.menu_overlay {
+  position: fixed;
+  inset: 0;
+  animation: fadeIn 300ms ease-out;
+}
+
 .menu_content {
   position: fixed;
   top: 120px;
   left: 0;
   right: 0;
-  z-index: -1;
+  z-index: 999;
   animation: slideDown 0.8s ease-out;
+  background-color: rgb(243, 241, 241);
 }
 @keyframes slideDown {
   from {

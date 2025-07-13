@@ -1,0 +1,12 @@
+.main_headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.first_heading {
+  font-size: 2rem;
+  font-weight: 300;
+}

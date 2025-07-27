@@ -5,8 +5,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgb(19, 86, 142);
+  /* border: 1px solid rgb(19, 86, 142); */
   border-radius: 10px;
+  background-color: #002d51;
 }
 
 .company_name {
@@ -15,9 +16,11 @@
   color: #f4a261;
 }
 
-.company_website {
+.company_website a {
   display: inline-flex;
   align-items: center;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 .material-symbols-outlined {

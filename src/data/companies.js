@@ -6,7 +6,7 @@ export const companies = [
     website: "www.abc-anglicky.cz",
   },
   {
-    name: "Mgr.Karel Kvasnica",
+    name: "Mgr. Karel Kvasnica",
     phone: "+ 420 603 702 534",
     email: "advokat@kvasnica.cz",
     website: "www.kvasnica.cz",

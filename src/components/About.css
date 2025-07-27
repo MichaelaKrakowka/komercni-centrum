@@ -1,48 +1,29 @@
 .main_part {
-  position: relative;
-  height: 90vh;
-  /* aspect-ratio: 16 / 9; */
-  overflow: hidden;
-}
-@media (min-width: 768px) {
-  .main_part {
-    height: 600px;
-  }
+  background-color: #002d51;
 }
 
-.main_part::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("/public/komercni-centrum.png") top/contain no-repeat;
-  filter: blur(8px) brightness(0.6);
-  z-index: 1;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
-}
-
-/* Desktop úprava – větší obrazovky */
-@media (min-width: 768px) {
-  .main_part {
-    height: 600px;
-  }
-
-  .main_part::before {
-    background-size: cover;
-    background-position: center;
-  }
-}
-
-.main_part_blur {
-  position: relative;
-  z-index: 2;
-  color: rgb(27, 90, 143);
-  text-align: center;
-  height: 100%;
+.main_content {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 2rem;
+  padding: 30px 0;
+}
+
+.main_heading {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 38px;
+}
+
+.square_img {
+  max-width: 300px;
+  border-radius: 15px;
+}
+
+.main_paragraph {
+  max-width: 300px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 1.1rem;
 }

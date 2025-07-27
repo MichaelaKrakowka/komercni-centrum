@@ -5,10 +5,13 @@ import { companies } from "../data/companies";
 
 export const Services = () => {
   return (
-    <section className="company_cards">
-      {companies.map((company, index) => (
-        <CompanyCard key={index} {...company} />
-      ))}
+    <section>
+      <h2 className="secondary_heading">Služby</h2>
+      <div className="company_cards">
+        {companies.map((company, index) => (
+          <CompanyCard key={index} {...company} />
+        ))}
+      </div>
     </section>
   );
 };

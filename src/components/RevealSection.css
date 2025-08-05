@@ -1,0 +1,10 @@
+.reveal {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.reveal.slide-in {
+  transform: translateY(0);
+  opacity: 1;
+}

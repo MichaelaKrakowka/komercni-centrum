@@ -12,8 +12,9 @@
 
 .company_name {
   text-align: center;
-  padding-bottom: 12px;
+  padding: 12px 9px;
   color: #f4a261;
+  overflow-wrap: break-word;
 }
 
 .company_website a {

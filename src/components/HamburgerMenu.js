@@ -25,25 +25,32 @@ export const HamburgerMenu = () => {
           <Dialog.Title>
             <VisuallyHidden>Hlavní menu</VisuallyHidden>
           </Dialog.Title>
-          <Dialog.Close asChild>
-            {/* <button className="close_btn">
+
+          {/* <button className="close_btn">
               <Cross2Icon className="mobile_close_menu" />
             </button> */}
-            <nav className="menu_links">
+          <nav className="menu_links">
+            <Dialog.Close asChild>
               <a href="#about" className="menu_link">
                 O nás
               </a>
+            </Dialog.Close>
+            <Dialog.Close asChild>
               <a href="#services" className="menu_link">
                 Služby
               </a>
+            </Dialog.Close>
+            <Dialog.Close asChild>
               <a href="#freeOffices" className="menu_link">
                 Volné prostory
               </a>
+            </Dialog.Close>
+            <Dialog.Close asChild>
               <a href="#contact" className="menu_link">
                 Kontakt
               </a>
-            </nav>
-          </Dialog.Close>
+            </Dialog.Close>
+          </nav>
         </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>

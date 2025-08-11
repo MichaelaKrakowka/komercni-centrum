@@ -75,10 +75,13 @@ h6 {
   isolation: isolate;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans";
   color: rgb(255, 255, 255);
-
   overflow-x: hidden;
 }
 

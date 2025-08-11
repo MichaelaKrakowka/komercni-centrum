@@ -4,12 +4,14 @@ export const companies = [
     phone: "+ 420 604 289 027",
     email: "chylkova.m@gmail.com",
     website: "www.abc-anglicky.cz",
+    building: "Komenskeho",
   },
   {
     name: "Mgr. Karel Kvasnica",
     phone: "+ 420 603 702 534",
     email: "advokat@kvasnica.cz",
     website: "www.kvasnica.cz",
+    building: "Komenskeho",
   },
   {
     name: "Charita Bohumín",
@@ -17,6 +19,7 @@ export const companies = [
     phone: "+ 420 732 393 316",
     email: "info@bohumin.charita.cz",
     website: "www.bohumin.charita.cz",
+    building: "Komenskeho",
   },
   {
     name: "AMK Profi - Technic s.r.o",
@@ -24,5 +27,59 @@ export const companies = [
     phone: "+ 420 739 089 993",
     email: "info@amkprofitechnic.cz",
     website: "www.amkprofitechnic.cz/",
+    building: "Komenskeho",
+  },
+  {
+    name: "Tetovací studio Šimičko",
+    phone: "+ 420 733 289 895",
+    building: "Komenskeho",
+  },
+  {
+    name: "Manikúra a nehtový design",
+    phone: "+ 420 792 258 497",
+    building: "Komenskeho",
+  },
+  {
+    name: "Masážní studio NK",
+    phone: "+ 420 734 816 496",
+    building: "Komenskeho",
+  },
+  {
+    name: "Pedikúra Relax",
+    phone: "+ 420 605 513 259",
+    building: "Komenskeho",
+  },
+  {
+    name: "Kadeřnický salon Gabriela",
+    phone: "+ 420 732 556 651",
+    building: "Komenskeho",
+  },
+  {
+    name: "Kosmetický salon Sandra",
+    subname: "Pedikura",
+    person: "Monika Pečová",
+    phone: "+ 420 770 103 363",
+    building: "Kostelni",
+  },
+  {
+    name: "Kosmetický salon Sandra",
+    subname: "Kosmetika",
+    person: "Růžena Šotkovská",
+    phone: "+ 420 603 878 088",
+    building: "Kostelni",
+  },
+  {
+    name: "Kosmetický salon Sandra",
+    subname: "Kosmetika",
+    person: "Andrea Marie Wajdová",
+    phone: "+ 420 605 826 489",
+    building: "Kostelni",
+  },
+  {
+    name: "Kosmetický salon Sandra",
+    subname: "Kadeřnictví",
+    person: "Karla Uherková",
+    phone: "+ 420 739 548 092",
+    building: "Kostelni",
   },
 ];

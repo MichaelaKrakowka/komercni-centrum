@@ -14,3 +14,18 @@
   padding: 30px 0;
   font-size: 38px;
 }
+
+.buildings_filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.building {
+  min-width: 150px;
+  font-weight: 600;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid #002d51;
+}

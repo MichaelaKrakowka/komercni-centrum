@@ -28,7 +28,10 @@
 }
 
 .main_part {
-  background-color: #002d51;
+  background-color: #e6eff8;
+  color: #002d51;
+  margin: 30px 40px 30px 30px;
+  border-radius: 15px;
 }
 
 .main_content {

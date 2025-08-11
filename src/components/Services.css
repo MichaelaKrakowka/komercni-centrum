@@ -22,10 +22,34 @@
   margin-bottom: 32px;
 }
 
-.building {
-  min-width: 150px;
+/* minimalistický styling */
+.rselect_trigger {
+  min-width: 230px;
+  margin-bottom: 70px;
+  padding: 10px 12px;
+  border: 1px solid #dcdfe4;
+  border-radius: 10px;
+  background: #fff;
   font-weight: 600;
-  padding: 8px 10px;
-  border-radius: 4px;
-  border: 1px solid #002d51;
+  cursor: pointer;
+}
+.rselect_content {
+  background: #fff;
+  min-width: 230px;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.rselect_viewport {
+  padding: 6px;
+}
+.rselect_item {
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #002d51;
+}
+.rselect_item[data-highlighted] {
+  background: #f1f5f9;
+  outline: none;
 }

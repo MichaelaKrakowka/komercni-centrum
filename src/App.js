@@ -1,14 +1,22 @@
 import React from "react";
 import { Header } from "./components/Header";
-import { MainSection } from "./components/MainSection";
-// import { Footer } from "./components/Footer";
+import { About } from "./components/About";
+import { Services } from "./components/Services";
+import { ForLease } from "./components/ForLease";
+import { Form } from "./components/Form";
+import { Map } from "./components/Map";
+import { Footer } from "./components/Footer";
 
 export const App = () => {
   return (
     <div className="container">
       <Header />
-      <MainSection />
-      {/* <Footer /> */}
+      <About />
+      <Services />
+      <ForLease />
+      <Form />
+      <Map />
+      <Footer />
     </div>
   );
 };

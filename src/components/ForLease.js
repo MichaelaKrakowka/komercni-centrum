@@ -1,5 +1,9 @@
 import "./ForLease.css";
 
 export const ForLease = () => {
-  return <section>Volné prostory k pronájmu</section>;
+  return (
+    <section id="forLease">
+      <h2 className="secondary_heading">Volné prostory k pronájmu</h2>
+    </section>
+  );
 };

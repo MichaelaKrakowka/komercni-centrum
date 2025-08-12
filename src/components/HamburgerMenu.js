@@ -41,13 +41,18 @@ export const HamburgerMenu = () => {
               </a>
             </Dialog.Close>
             <Dialog.Close asChild>
-              <a href="#freeOffices" className="menu_link">
-                Volné prostory
+              <a href="#forLease" className="menu_link">
+                Volné prostory k pronájmu
               </a>
             </Dialog.Close>
             <Dialog.Close asChild>
-              <a href="#contact" className="menu_link">
+              <a href="#form" className="menu_link">
                 Kontakt
+              </a>
+            </Dialog.Close>
+            <Dialog.Close asChild>
+              <a href="#map" className="menu_link">
+                Kde nás najdete
               </a>
             </Dialog.Close>
           </nav>

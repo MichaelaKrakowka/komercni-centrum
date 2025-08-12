@@ -1,5 +1,9 @@
 import "./Map.css";
 
 export const Map = () => {
-  return <section>Kde nás najdete</section>;
+  return (
+    <section id="map">
+      <h2 className="secondary_heading">Kde nás najdete</h2>
+    </section>
+  );
 };

@@ -31,6 +31,10 @@
   font-weight: 600;
   cursor: pointer;
 }
+
+.select_ikon {
+  padding-left: 10px;
+}
 .rselect_content {
   background: #fff;
   min-width: 230px;

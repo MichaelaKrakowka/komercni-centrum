@@ -20,6 +20,7 @@ export const Services = () => {
           <Select.Root value={building} onValueChange={setBuilding}>
             <Select.Trigger className="rselect_trigger" aria-label="Budova">
               <Select.Value />
+              <Select.Icon className="select_icon"> ▼</Select.Icon>
             </Select.Trigger>
             <Select.Portal>
               <Select.Content
@@ -28,7 +29,7 @@ export const Services = () => {
                 sideOffset={6}>
                 <Select.Viewport className="rselect_viewport">
                   <Select.Item className="rselect_item" value="Komenskeho">
-                    <Select.ItemText>Komenského ulice</Select.ItemText>
+                    <Select.ItemText>Komenského ulice </Select.ItemText>
                   </Select.Item>
                   <Select.Item className="rselect_item" value="Kostelni">
                     <Select.ItemText>Kostelní ulice</Select.ItemText>

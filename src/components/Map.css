@@ -1,0 +1,12 @@
+.mapSection {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+.addressSection {
+  display: flex;
+  flex-direction: column;
+  padding-left: 35px;
+  gap: 20px;
+}

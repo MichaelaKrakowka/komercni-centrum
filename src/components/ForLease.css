@@ -1,0 +1,22 @@
+.advantage_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px;
+  gap: 15px;
+}
+
+.advantage_card {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 25px;
+}
+
+.symbols_advantage {
+  font-size: 42px;
+}

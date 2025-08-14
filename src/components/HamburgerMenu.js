@@ -42,7 +42,7 @@ export const HamburgerMenu = () => {
             </Dialog.Close>
             <Dialog.Close asChild>
               <a href="#forLease" className="menu_link">
-                Volné prostory k pronájmu
+                Proč u nás
               </a>
             </Dialog.Close>
             <Dialog.Close asChild>

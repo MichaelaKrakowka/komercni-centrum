@@ -1,5 +1,5 @@
-import React from "react";
 import "./CompanyCard.css";
+import { RevealSection } from "./RevealSection";
 
 export const CompanyCard = ({
   name,
@@ -10,42 +10,44 @@ export const CompanyCard = ({
   website,
 }) => {
   return (
-    <div className="company_card">
-      <h3 className="company_name">{name}</h3>
+    <RevealSection>
+      <div className="company_card fade_item delay_0">
+        <h3 className="company_name">{name}</h3>
 
-      {subname && <h4 className="company_name">{subname}</h4>}
+        {subname && <h4 className="company_name">{subname}</h4>}
 
-      {person && (
-        <p className="company_person">
-          <span className="material-symbols-outlined">person</span>
-          {person}
+        {person && (
+          <p className="company_person">
+            <span className="material-symbols-outlined">person</span>
+            {person}
+          </p>
+        )}
+
+        <p className="company_phone">
+          <span className="material-symbols-outlined">call</span>
+          {phone}
         </p>
-      )}
 
-      <p className="company_phone">
-        <span className="material-symbols-outlined">call</span>
-        {phone}
-      </p>
+        {email && (
+          <p className="company_email">
+            <span className="material-symbols-outlined">alternate_email</span>
+            {email}
+          </p>
+        )}
 
-      {email && (
-        <p className="company_email">
-          <span className="material-symbols-outlined">alternate_email</span>
-          {email}
-        </p>
-      )}
-
-      {website && (
-        <div className="company_website">
-          <a
-            href={website.startsWith("http") ? website : `https://${website}`}
-            target="_blank"
-            rel="noopener noreferrer">
-            {" "}
-            <span className="material-symbols-outlined">home</span>
-            {website}
-          </a>
-        </div>
-      )}
-    </div>
+        {website && (
+          <div className="company_website">
+            <a
+              href={website.startsWith("http") ? website : `https://${website}`}
+              target="_blank"
+              rel="noopener noreferrer">
+              {" "}
+              <span className="material-symbols-outlined">home</span>
+              {website}
+            </a>
+          </div>
+        )}
+      </div>
+    </RevealSection>
   );
 };

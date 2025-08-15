@@ -17,6 +17,16 @@
   padding: 25px;
 }
 
+.advantage_circle {
+  position: relative;
+  width: 65px;
+  height: 65px;
+  background-color: #f4a261;
+  border-radius: 50%;
+}
+
 .symbols_advantage {
-  font-size: 42px;
+  position: absolute;
+  left: 45%;
+  font-size: 62px;
 }

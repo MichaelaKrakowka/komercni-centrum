@@ -14,19 +14,22 @@ export const ForLease = () => {
           style={{ textAlign: "center", fontSize: "24px" }}>
           Proč podnikat u nás
         </h3>
-
-        <div className="advantage_container ">
-          {advantage.map((item) => (
-            <div key={item.id} className="advantage_card fade_item delay_2">
-              <span className="material-symbols-outlined symbols_advantage">
-                {item.iconName}
-              </span>
+      </RevealSection>
+      <div className="advantage_container ">
+        {advantage.map((item) => (
+          <RevealSection key={item.id}>
+            <div className="advantage_card fade_item delay_2">
+              <div className="advantage_circle">
+                <span className="material-symbols-outlined symbols_advantage">
+                  {item.iconName}
+                </span>
+              </div>
               <h3>{item.title}</h3>
               <p>{item.paragraph}</p>
             </div>
-          ))}
-        </div>
-      </RevealSection>
+          </RevealSection>
+        ))}
+      </div>
     </section>
   );
 };

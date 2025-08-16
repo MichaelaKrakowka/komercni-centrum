@@ -7,6 +7,7 @@
   background-color: #042038;
   gap: 6px;
   color: white;
+  box-shadow: 0 -10px 20px rgba(17, 44, 66, 0.5);
 }
 
 .footer_linkedIn {

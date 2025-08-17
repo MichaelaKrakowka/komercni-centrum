@@ -6,6 +6,10 @@ import emailjs from "emailjs-com";
 
 export const Form = () => {
   const contactForm = React.useRef();
+  const [personName, setPersonName] = React.useState(" ");
+  const [email, setEmail] = React.useState("@");
+  const [message, setMessage] = React.useState(" ");
+
   const sendEmail = (event) => {
     event.preventDefault();
 
@@ -18,8 +22,11 @@ export const Form = () => {
       )
       .then(
         () => {
-          alert("Zpráva úspěšně odeslána!");
+          alert("Zpráva byla úspěšně odeslána! Děkujeme!");
           contactForm.current.reset();
+          setPersonName("");
+          setEmail("@");
+          setMessage("");
         },
         (error) => {
           console.error("Chyba při odesílání:", error);
@@ -35,11 +42,13 @@ export const Form = () => {
           <h2 className="secondary_heading fade_item delay_0">
             Kontaktujte nás
           </h2>
-          <p>Máte otázku? Jsme jen zprávu daleko. </p>
-          <p>
-            Spojte se s námi jednoduše pomocí tohoto formuláře, ozveme se co
-            nejdříve.
-          </p>
+          <div className="contact_paragraph">
+            <p>Máte otázku? Jsme jen zprávu daleko. </p>
+            <p>
+              Spojte se s námi jednoduše pomocí tohoto formuláře, ozveme se co
+              nejdříve.
+            </p>
+          </div>
         </div>
         <div className="form_container">
           <form
@@ -50,6 +59,8 @@ export const Form = () => {
               <label className="form_label">Jméno</label>
               <input
                 type="text"
+                value={personName}
+                onChange={(e) => setPersonName(e.target.value)}
                 className="form_input"
                 name="from_name"
                 required
@@ -58,6 +69,8 @@ export const Form = () => {
               <label className="form_label">Email</label>
               <input
                 type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="form_input"
                 name="from_email"
                 required
@@ -66,8 +79,43 @@ export const Form = () => {
 
             <div className="form_message">
               <label className="form_label">Zpráva</label>
-              <textarea className="form_textarea" name="message" required />
+              <textarea
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                className="form_textarea"
+                name="message"
+                required
+              />
             </div>
+
+            <div className="form_gdpr">
+              <input
+                type="checkbox"
+                className="checkbox"
+                id="gdpr"
+                name="gdprConsent"
+                required
+              />
+              <div className="gdpr_paragraph">
+                <p>
+                  Odesláním tohoto formuláře souhlasíte se zpracováním vašich
+                  údajů pouze za účelem vyřízení vašeho dotazu.{" "}
+                </p>{" "}
+                <p>
+                  Vámi poskytnuté údaje (jméno, e-mail, text zprávy) používáme
+                  výhradně za účelem odpovědi na váš dotaz.
+                </p>{" "}
+                <p>
+                  Údaje neukládáme déle, než je nezbytně nutné pro vyřízení
+                  komunikace, a nepředáváme je žádné třetí straně.{" "}
+                </p>{" "}
+                <p>
+                  V případě dotazů nás můžete kontaktovat prostřednictvím
+                  formuláře.
+                </p>
+              </div>
+            </div>
+
             <button type="submit" className="form_btn">
               Odeslat
             </button>

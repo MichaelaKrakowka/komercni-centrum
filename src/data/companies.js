@@ -22,14 +22,6 @@ export const companies = [
     id: "Komenskeho",
   },
   {
-    name: "AMK Profi - Technic s.r.o",
-    subname: "kancelář",
-    phone: "+ 420 739 089 993",
-    email: "info@amkprofitechnic.cz",
-    website: "www.amkprofitechnic.cz/",
-    id: "Komenskeho",
-  },
-  {
     name: "Tetovací studio Šimičko",
     phone: "+ 420 733 289 895",
     id: "Komenskeho",

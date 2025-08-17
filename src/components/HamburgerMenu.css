@@ -27,11 +27,12 @@ svg {
 }
 .menu_link {
   position: relative;
-  font-family: "Menbere";
-  font-size: 18px;
-  color: rgb(19, 86, 142);
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #002d51;
   text-decoration: none;
   padding: 8px;
+  text-transform: uppercase;
 }
 
 .menu_link::after {
@@ -41,7 +42,7 @@ svg {
   right: 0;
   width: 0%;
   height: 2px;
-  background-color: rgb(19, 86, 142);
+  background-color: #002d51;
 }
 
 .menu_link:hover::after {

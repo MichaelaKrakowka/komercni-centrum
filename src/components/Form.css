@@ -8,7 +8,16 @@
 .form_container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
+}
+
+.contact_paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
 }
 
 .form {
@@ -35,7 +44,7 @@
   border-bottom: 1px solid #f4a261;
   background-color: transparent;
   line-height: 2.625rem;
-  color: #529edc;
+  color: #002d51;
   margin-bottom: 25px;
 }
 
@@ -49,21 +58,71 @@
   border-bottom: 1px solid #f4a261;
   background-color: transparent;
   line-height: 2.625rem;
-  color: #529edc;
+  color: #002d51;
   margin-bottom: 25px;
+}
+
+.form_gdpr {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  border: 1px solid #002d5183;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox:checked::after {
+  content: "✔";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: #002d51;
+}
+
+.gdpr_paragraph {
+  padding: 15px 0;
+  font-size: 0.8rem;
+  color: #002d5183;
 }
 
 .form_btn {
   display: inline-block;
   width: auto;
   align-self: flex-end;
-  padding: 20px 77px;
+  padding: 14px 50px;
   border-radius: 35px;
   border: none;
   font-weight: bold;
   cursor: pointer;
-
   font-family: "Open Sans";
   background-color: #f4a261;
   color: #002d51;
+
+  /* border: 1px solid transparent;
+  transition: border-color 0.3s ease; */
+
+  /* transition: transform 0.2s ease, box-shadow 0.2s ease; */
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.form_btn:hover {
+  /* border-color: #002d51;  */
+
+  /* background-color: #e59444; */
+
+  /* transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); */
+
+  background-color: #002d51;
+  color: #f4a261;
 }

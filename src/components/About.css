@@ -1,36 +1,7 @@
-/* základní styl všech fade-item prvků */
-.fade_item {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease-out;
-}
-
-/* jakmile parent (reveal.slide-in) je aktivní, spustí se animace */
-.reveal.slide-in .fade_item {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* jednotlivá zpoždění */
-.delay_0 {
-  transition-delay: 0s;
-}
-
-.delay_1 {
-  transition-delay: 0.2s;
-}
-
-.delay_2 {
-  transition-delay: 0.4s;
-}
-.delay_3 {
-  transition-delay: 0.6s;
-}
-
 .main_part {
   background-color: #e6eff8;
   color: #002d51;
-  margin: 30px 40px 30px 30px;
+  margin: 30px;
   border-radius: 15px;
 }
 

@@ -20,3 +20,35 @@
   margin-left: 28px;
   border-radius: 50%;
 }
+
+/* .nav_hamburger {
+  display: flex;
+  align-items: flex-end;
+} */
+.nav_links {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav_hamburger {
+    display: none;
+  }
+  .nav_links {
+    display: flex;
+  }
+  .nav_element {
+    padding: 0 18px;
+    list-style: none;
+  }
+  .nav_link {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1875rem;
+    font-size: 0.8rem;
+    padding: 28px 0;
+  }
+  .nav_link:hover {
+    border-bottom: 1px solid #f4a261;
+  }
+}

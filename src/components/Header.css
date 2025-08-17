@@ -29,7 +29,7 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .nav_hamburger {
     display: none;
   }
@@ -46,9 +46,15 @@
     text-decoration: none;
     letter-spacing: 0.1875rem;
     font-size: 0.8rem;
-    padding: 28px 0;
+    padding: 28px 10px;
+  }
+  .nav_links:last-of-type {
+    margin-right: 40px;
   }
   .nav_link:hover {
     border-bottom: 1px solid #f4a261;
+  }
+  .logo {
+    margin-left: 40px;
   }
 }

@@ -70,7 +70,7 @@ svg {
   z-index: 999;
   animation: slideDown 0.8s ease-out;
   background-color: #f2f5f9;
-  margin: 0 40px 0 30px;
+  /* margin: 0 40px 0 30px; */
   border-radius: 0 0 15px 15px;
 }
 @keyframes slideDown {

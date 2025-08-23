@@ -80,6 +80,7 @@ html {
 }
 
 body {
+  background-image: linear-gradient(to bottom right, #f2f7fd, white);
   font-family: "Open Sans";
   color: #002d51;
   overflow-x: hidden;

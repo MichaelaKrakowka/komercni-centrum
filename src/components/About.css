@@ -1,8 +1,7 @@
 .main_part {
-  /* background-color: #e6eff8; */
+  /* background-color: #edf6ff; */
   color: #002d51;
-  margin: 30px;
-  /* border-radius: 15px; */
+  /* box-shadow: 0 10px 15px #edf6ff; */
 }
 
 .main_content {
@@ -11,6 +10,12 @@
   flex-direction: column;
   align-items: center;
   padding: 30px 0;
+}
+
+.main_about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main_heading {
@@ -29,4 +34,17 @@
   text-align: center;
   padding-top: 20px;
   font-size: 1.1rem;
+}
+
+@media (min-width: 1024px) {
+  .square_img {
+    min-width: 700px;
+  }
+
+  .about_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
 }

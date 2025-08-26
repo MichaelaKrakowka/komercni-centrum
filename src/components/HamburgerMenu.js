@@ -21,7 +21,7 @@ export const HamburgerMenu = () => {
       </Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay className="menu_overlay" />
-        <Dialog.Content className="menu_content">
+        <Dialog.Content className="menu_content" aria-describedby={undefined}>
           <Dialog.Title>
             <VisuallyHidden>Hlavní menu</VisuallyHidden>
           </Dialog.Title>

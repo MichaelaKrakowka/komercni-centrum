@@ -8,13 +8,19 @@ export const CompanyCard = ({
   phone,
   email,
   website,
+  field,
 }) => {
   return (
     <RevealSection>
       <div className="company_card fade_item delay_0">
-        <h3 className="company_name">{name}</h3>
+        <div className="card_title">
+          <h3 className="company_name"> {name}</h3>
+          <span className="material-symbols-outlined card_symbols">
+            {field}
+          </span>
+        </div>
 
-        {subname ? <h4 className="company_name">{subname}</h4> : null}
+        {subname ? <h4 className="company_name">{subname} </h4> : null}
 
         {person ? (
           <p className="company_person">

@@ -5,7 +5,7 @@ export const companies = [
     email: "chylkova.m@gmail.com",
     website: "www.abc-anglicky.cz",
     id: "Komenskeho",
-    field: "Jazykový kurz",
+    field: "school",
   },
   {
     name: "Mgr. Karel Kvasnica",
@@ -13,7 +13,7 @@ export const companies = [
     email: "advokat@kvasnica.cz",
     website: "www.kvasnica.cz",
     id: "Komenskeho",
-    field: "Advokát",
+    field: "gavel",
   },
   {
     name: "Charita Bohumín",
@@ -22,37 +22,37 @@ export const companies = [
     email: "info@bohumin.charita.cz",
     website: "www.bohumin.charita.cz",
     id: "Komenskeho",
-    field: "Charita",
+    field: "volunteer_activism",
   },
   {
     name: "Tetovací studio Šimičko",
     phone: "+ 420 733 289 895",
     id: "Komenskeho",
-    field: "Tetovací studio",
+    field: "ink_pen",
   },
   {
     name: "Manikúra a nehtový design",
     phone: "+ 420 792 258 497",
     id: "Komenskeho",
-    field: "Manikúra",
+    field: "health_and_beauty",
   },
   {
     name: "Masážní studio NK",
     phone: "+ 420 734 816 496",
     id: "Komenskeho",
-    field: "Masáž",
+    field: "spa",
   },
   {
     name: "Pedikúra Relax",
     phone: "+ 420 605 513 259",
     id: "Komenskeho",
-    field: "Pedikúra",
+    field: "barefoot",
   },
   {
     name: "Kadeřnický salon Gabriela",
     phone: "+ 420 732 556 651",
     id: "Komenskeho",
-    field: "Kadeřnictví",
+    field: "content_cut",
   },
   {
     name: "Kosmetický salon Sandra",
@@ -60,7 +60,7 @@ export const companies = [
     person: "Monika Pečová",
     phone: "+ 420 770 103 363",
     id: "Kostelni",
-    field: "Pedikúra",
+    field: "barefoot",
   },
   {
     name: "Kosmetický salon Sandra",
@@ -68,7 +68,7 @@ export const companies = [
     person: "Růžena Šotkovská",
     phone: "+ 420 603 878 088",
     id: "Kostelni",
-    field: "Kosmetika",
+    field: "face_retouching_natural",
   },
   {
     name: "Kosmetický salon Sandra",
@@ -76,7 +76,7 @@ export const companies = [
     person: "Andrea Marie Wajdová",
     phone: "+ 420 605 826 489",
     id: "Kostelni",
-    field: "Kosmetika",
+    field: "face_retouching_natural",
   },
   {
     name: "Kosmetický salon Sandra",
@@ -84,6 +84,6 @@ export const companies = [
     person: "Karla Uherková",
     phone: "+ 420 739 548 092",
     id: "Kostelni",
-    field: <span class="material-symbols-outlined">content_cut</span>,
+    field: "content_cut",
   },
 ];

@@ -19,8 +19,7 @@
 }
 
 .main_heading {
-  text-align: center;
-  padding-bottom: 20px;
+  text-align: left;
   font-size: 2.7rem;
 }
 
@@ -31,7 +30,7 @@
 
 .main_paragraph {
   max-width: 300px;
-  text-align: center;
+  text-align: left;
   padding-top: 20px;
   font-size: 1.1rem;
 }

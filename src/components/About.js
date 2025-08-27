@@ -29,7 +29,7 @@ export const About = () => {
                   najdete pohodlně a na dosah.
                 </p>
                 <p className="fade_item delay_3">
-                  Díky skvělé poloze máte vše <br />
+                  Navíc díky skvělé poloze máte vše <br />
                   na dosah bez zbytečného cestování.
                 </p>
               </div>

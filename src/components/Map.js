@@ -35,7 +35,7 @@ export const Map = () => {
 
             <div className="address_paragraph">
               <p>KOMERČNÍ CENTRUM</p>
-              <p>Kostelní 336</p>
+              <p>Kostelní 363</p>
               <p>735 81 Bohumín 1</p>
             </div>
           </div>
